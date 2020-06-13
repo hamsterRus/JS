@@ -121,16 +121,12 @@ mathOperation(1,2,"Умножение")
 let deposit = +prompt('Введите сумму, которую следует положить на Ваш счет в банке');
 let depositString = String(deposit);
 let depositStringLength = Number(depositString.charAt(depositString.length - 1));
-if (depositStringLength == 0){
-  depositStringLength = 5;
-} else{
-  depositStringLength
-};
-switch (Boolean(depositStringLength)){
+
+switch (true) {
   case (depositStringLength == 1):
     alert(`Ваша сумма в ${deposit} рубль успешно зачислена.`)
     break;
-  case (depositStringLength >= 5 && depositStringLength <= 20):
+  case (depositStringLength == 0 || depositStringLength >= 5 && depositStringLength <= 20):
     alert(`Ваша сумма в ${deposit} рублей успешно зачислена.`)
     break;
   case (depositStringLength >= 2 && depositStringLength <= 4): 
