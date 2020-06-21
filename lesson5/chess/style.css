@@ -1,0 +1,57 @@
+body {
+    background: brown;
+}
+
+.container {
+    position: relative;
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.chessboard{
+    max-width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.column{
+    display: flex;
+    flex-wrap: wrap;
+}
+.row{
+    position: absolute;
+    top: 65px;
+    left: -20px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.white {
+    width: 50px;
+    height: 50px;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+.black {
+    width: 50px;
+    height: 50px;
+    box-sizing: border-box;
+    background-color: black;
+}
+
+.number {
+    
+    width: 50px;
+    height: 50px;
+}
+
+.letter {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 50px;
+    height: 50px;
+}
